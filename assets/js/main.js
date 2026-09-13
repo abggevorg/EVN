@@ -53,7 +53,7 @@
 		var label = application.querySelector('.job-file-label');
 		var sendButton = application.querySelector('.job-send');
 		var showSuccess = function () {
-			application.innerHTML = '<div class="job-success"><span class="icon solid fa-check-circle" aria-hidden="true"></span><strong>Je hebt gesolliciteerd</strong></div>';
+			application.innerHTML = '<div class="job-success"><span class="icon solid fa-check-circle" aria-hidden="true"></span><strong>Je hebt gesolliciteerd!</strong></div>';
 		};
 
 		input.addEventListener('change', function () {
