@@ -1384,17 +1384,43 @@ ul.offer-actions .whatsapp-offerte {
   ul.offer-actions .whatsapp-offerte:hover {
     background-color: #20b958; }
 
+ul.offer-actions li {
+  padding-left: 0; }
+ul.offer-actions p {
+  margin: 0;
+  white-space: nowrap; }
+
 @media screen and (max-width: 480px) {
   ul.offer-actions {
-    -moz-flex-direction: column;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column; }
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    -moz-column-gap: 0.45em;
+    -webkit-column-gap: 0.45em;
+    column-gap: 0.45em;
+    margin-left: 0;
+    width: 100%; }
     ul.offer-actions li {
       padding-left: 0;
-      padding-top: 1em; }
-      ul.offer-actions li:first-child {
-        padding-top: 0; } }
+      padding-top: 0; }
+    ul.offer-actions li:first-child {
+      -moz-flex: 1 1 auto;
+      -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+      flex: 1 1 auto;
+      min-width: 0; }
+      ul.offer-actions li:first-child .button {
+        font-size: 0.68em;
+        padding: 0 0.8em;
+        width: 100%; }
+    ul.offer-actions li:nth-child(2) {
+      margin: 0; }
+    ul.offer-actions .whatsapp-offerte {
+      -moz-flex: 0 0 2.59em;
+      -webkit-flex: 0 0 2.59em;
+      -ms-flex: 0 0 2.59em;
+      flex: 0 0 2.59em; } }
 
 /* Icons */
 ul.icons {

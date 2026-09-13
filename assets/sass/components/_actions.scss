@@ -63,6 +63,15 @@
 	}
 
 	ul.offer-actions {
+		li {
+			padding-left: 0;
+		}
+
+		p {
+			margin: 0;
+			white-space: nowrap;
+		}
+
 		.whatsapp-offerte {
 			@include vendor('align-items', 'center');
 			@include vendor('display', 'inline-flex');
@@ -83,15 +92,33 @@
 
 	@media screen and (max-width: 480px) {
 		ul.offer-actions {
-			@include vendor('flex-direction', 'column');
+			@include vendor('align-items', 'center');
+			@include vendor('column-gap', '0.45em');
+			margin-left: 0;
+			width: 100%;
 
 			li {
 				padding-left: 0;
-				padding-top: 1em;
+				padding-top: 0;
+			}
 
-				&:first-child {
-					padding-top: 0;
+			li:first-child {
+				@include vendor('flex', '1 1 auto');
+				min-width: 0;
+
+				.button {
+					font-size: 0.68em;
+					padding: 0 0.8em;
+					width: 100%;
 				}
+			}
+
+			li:nth-child(2) {
+				margin: 0;
+			}
+
+			.whatsapp-offerte {
+				flex: 0 0 2.59em;
 			}
 		}
 	}
