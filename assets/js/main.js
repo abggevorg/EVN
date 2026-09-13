@@ -15,7 +15,7 @@
 		$menu.html('<header class="major"><h2>Menu</h2></header>' +
 			'<ul>' +
 			'<li><a href="index.html">Home</a></li>' +
-			'<li><a href="generic.html">Over ons</a></li>' +
+			'<li><a href="over-ons.html">Over ons</a></li>' +
 			'<li><span class="opener">Onze diensten</span><ul>' +
 			'<li><a href="afbraakwerken.html">Afbraakwerken</a></li>' +
 			'<li><a href="schilderen.html">Schilderen</a></li>' +
