@@ -1580,6 +1580,19 @@ ul.contact {
     ul.contact li a {
       color: inherit; }
 
+ul.contact-page-list li span {
+  color: var(--color-text);
+  display: block;
+  font-size: 0.8em;
+  margin-top: 0.25em; }
+
+ul.contact-page-list li.brands:before {
+  font-family: 'Font Awesome 5 Brands'; }
+
+.contact-address .icon {
+  color: var(--color-primary);
+  margin-right: 0.5em; }
+
 /* Pagination */
 ul.pagination {
   cursor: default;

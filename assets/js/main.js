@@ -26,7 +26,7 @@
 			'<li><a href="andere-werken.html">Andere werken</a></li>' +
 			'</ul></li>' +
 			'<li><a href="#">Informatie</a></li>' +
-			'<li><a href="#">Contact</a></li>' +
+			'<li><a href="contact.html">Contact</a></li>' +
 			'<li><a href="#">Jobs</a></li>' +
 			'</ul>');
 		if (window.matchMedia('(min-width: 737px)').matches) {
