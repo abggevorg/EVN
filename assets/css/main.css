@@ -1915,12 +1915,13 @@ button,
 
 .reviews-track {
   display: flex;
-  animation: reviews-slide 32s infinite ease-in-out; }
+  gap: 0.9em;
+  animation: reviews-slide 16s infinite ease-in-out; }
 
 .review-card {
   background: var(--color-code-bg);
   border: solid 1px var(--color-border);
-  flex: 0 0 100%;
+  flex: 0 0 calc(100% - 0.9em);
   padding: 2.5em;
   text-align: center; }
 
@@ -1964,10 +1965,10 @@ button,
   text-align: center; }
 
 @keyframes reviews-slide {
-  0%, 21% { transform: translateX(0); }
-  25%, 46% { transform: translateX(-100%); }
-  50%, 71% { transform: translateX(-200%); }
-  75%, 96% { transform: translateX(-300%); }
+  0%, 15% { transform: translateX(0); }
+  25%, 40% { transform: translateX(-100%); }
+  50%, 65% { transform: translateX(-200%); }
+  75%, 90% { transform: translateX(-300%); }
   100% { transform: translateX(0); }
 }
 
