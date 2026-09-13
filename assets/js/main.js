@@ -27,12 +27,33 @@
 			'</ul></li>' +
 			'<li><a href="informatie.html">Informatie</a></li>' +
 			'<li><a href="nieuws.html">Nieuws</a></li>' +
+			'<li><a href="fotos.html">Foto\'s</a></li>' +
 			'<li><a href="contact.html">Contact</a></li>' +
 			'<li><a href="jobs.html">Jobs</a></li>' +
 			'</ul>');
 		if (window.matchMedia('(min-width: 737px)').matches) {
 			$menu.children('ul').find('.opener').addClass('active');
 		}
+	}
+
+	var sidebarInner = document.querySelector('#sidebar > .inner');
+	if (sidebarInner) {
+		Array.from(sidebarInner.children).forEach(function (child) {
+			if ((child.tagName === 'SECTION' && child.id !== 'search') || child.tagName === 'FOOTER') {
+				child.remove();
+			}
+		});
+
+		var siteContact = document.createElement('section');
+		siteContact.className = 'site-contact';
+		siteContact.innerHTML = '<header class="major"><h2>Contacteer ons</h2></header>' +
+			'<p>Vertel ons kort wat u wilt laten uitvoeren. We nemen zo snel mogelijk contact met u op.</p>' +
+			'<ul class="contact">' +
+			'<li class="icon solid fa-envelope"><a href="mailto:infoevngroup@gmail.com">infoevngroup@gmail.com</a></li>' +
+			'<li class="icon solid fa-phone"><a href="tel:+32499727277">(+32) 0499 72 72 77</a></li>' +
+			'</ul>' +
+			'<footer id="footer"><p class="copyright">&copy; 2026 EVN Group. All rights reserved.</p></footer>';
+		sidebarInner.appendChild(siteContact);
 	}
 
 	var serviceImages = {
