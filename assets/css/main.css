@@ -2243,6 +2243,95 @@ button,
   font-weight: 600;
   white-space: nowrap; }
 
+.gallery-page-header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2.5em; }
+
+.gallery-kicker {
+  color: var(--color-primary);
+  display: block;
+  font-size: 0.75em;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  margin-bottom: 0.75em;
+  text-transform: uppercase; }
+
+.gallery-page-header .main {
+  margin-bottom: 0.75em; }
+
+.gallery-page-header p {
+  margin-bottom: 0; }
+
+.gallery-header-icon {
+  align-items: center;
+  background: var(--color-primary);
+  border-radius: 50%;
+  color: #ffffff;
+  display: inline-flex;
+  flex: 0 0 4em;
+  font-size: 1.8em;
+  height: 4em;
+  justify-content: center;
+  width: 4em; }
+
+.photo-gallery {
+  border: 1px solid var(--color-border);
+  display: flex;
+  justify-content: center;
+  min-height: 22em;
+  padding: 1.5em; }
+
+.instagram-profile-embed {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  max-width: 33em;
+  min-height: 20em;
+  width: 100%;
+  text-align: center; }
+
+.gallery-empty {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 19em;
+  padding: 2em;
+  text-align: center; }
+
+.gallery-empty-icon {
+  color: var(--color-primary);
+  font-size: 3em;
+  margin-bottom: 0.6em; }
+
+.gallery-empty h2 {
+  margin-bottom: 0.5em; }
+
+.gallery-empty p {
+  max-width: 30em;
+  margin-bottom: 1.25em; }
+
+.gallery-status {
+  align-items: center;
+  color: var(--color-heading);
+  display: inline-flex;
+  font-size: 0.8em;
+  font-weight: 700;
+  gap: 0.5em; }
+
+.gallery-status-dot {
+  background: var(--color-primary);
+  border-radius: 50%;
+  display: inline-block;
+  height: 0.55em;
+  width: 0.55em; }
+
+.gallery-note {
+  color: var(--color-text);
+  font-size: 0.85em;
+  margin-top: 1.25em; }
+
 @media screen and (max-width: 736px) {
   .jobs-grid {
     grid-template-columns: 1fr; }
@@ -2269,6 +2358,20 @@ button,
   .news-pagination .button {
     font-size: 0.62em;
     padding: 0 0.75em; }
+
+  .gallery-page-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1.5em; }
+
+  .gallery-header-icon {
+    flex-basis: 3.25em;
+    font-size: 1.5em;
+    height: 3.25em;
+    width: 3.25em; }
+
+  .photo-gallery {
+    padding: 0.75em; }
 
   .job-application {
     align-items: stretch;
