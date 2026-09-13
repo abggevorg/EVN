@@ -66,12 +66,6 @@
 			});
 		};
 		likeTarget.addEventListener('click', addLike);
-		likeTarget.addEventListener('keydown', function (event) {
-			if (event.key === 'Enter' || event.key === ' ') {
-				event.preventDefault();
-				addLike();
-			}
-		});
 	}
 
 	document.querySelectorAll('.job-application').forEach(function (application) {
