@@ -244,8 +244,7 @@
 									<ul class="contact">
 										<li class="icon solid fa-envelope"><a href="#">infoevngroup@gmail.com</a></li>
 										<li class="icon solid fa-phone">(+32) 0499 72 72 77 </li>
-										<li class="icon solid fa-home">Frits van den Berghelaan<br />
-										 15, 2630 Aartselaar</li>
+				
 									</ul>
 								</section>
 
@@ -259,12 +258,27 @@
 
 			</div>
 
+			<div class="cookie-notice" id="cookie-notice" role="dialog" aria-label="Cookie-informatie">
+				<div class="cookie-art" aria-hidden="true"></div>
+				<div class="cookie-notice-content">
+					<strong>Geen cookies</strong>
+					<p>Wij gebruiken geen cookies op deze website.</p>
+				</div>
+					<a href="cookies.html" class="cookie-info icon solid fa-exclamation-circle" aria-label="Lees meer over cookies"><span class="label">Meer informatie over cookies</span></a>
+				<button type="button" class="cookie-ok" id="cookie-ok">Goed!</button>
+			</div>
+
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+				document.getElementById('cookie-ok').addEventListener('click', function () {
+					document.getElementById('cookie-notice').remove();
+				});
+			</script>
 
 	</body>
 </html>
