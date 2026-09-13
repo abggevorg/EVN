@@ -2100,11 +2100,53 @@ button,
 .job-success .icon {
   font-size: 1.8em; }
 
+.info-warning {
+  background: rgba(245, 106, 106, 0.08);
+  border-left: solid 4px var(--color-primary);
+  padding: 1em 1.25em; }
+
+.information-grid {
+  display: grid;
+  gap: 1.5em;
+  grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+.information-card {
+  background: var(--color-code-bg);
+  border: solid 1px var(--color-border);
+  padding: 1.75em; }
+
+.information-card h2 {
+  font-size: 1.15em;
+  margin-bottom: 0.75em; }
+
+.information-card h3 {
+  color: var(--color-heading);
+  font-size: 0.9em;
+  margin-bottom: 0.5em; }
+
+.information-card a,
+.information-links a {
+  color: var(--color-primary);
+  font-weight: 600; }
+
+.information-links li {
+  border-top: solid 1px var(--color-border);
+  padding: 0.75em 0; }
+
+.information-links li:first-child {
+  border-top: 0; }
+
 @media screen and (max-width: 736px) {
   .jobs-grid {
     grid-template-columns: 1fr; }
 
   .job-card {
+    padding: 1.5em; }
+
+  .information-grid {
+    grid-template-columns: 1fr; }
+
+  .information-card {
     padding: 1.5em; }
 
   .job-application {

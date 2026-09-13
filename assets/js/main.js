@@ -25,7 +25,7 @@
 			'<li><a href="ramen-deuren.html">Ramen en deuren vervangen</a></li>' +
 			'<li><a href="andere-werken.html">Andere werken</a></li>' +
 			'</ul></li>' +
-			'<li><a href="#">Informatie</a></li>' +
+			'<li><a href="informatie.html">Informatie</a></li>' +
 			'<li><a href="contact.html">Contact</a></li>' +
 			'<li><a href="jobs.html">Jobs</a></li>' +
 			'</ul>');
