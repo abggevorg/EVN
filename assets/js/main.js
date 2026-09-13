@@ -31,6 +31,20 @@
 			'</ul>');
 	}
 
+	var serviceImages = {
+		'afbraakwerken.html': 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1200&q=80',
+		'schilderen.html': 'https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=1200&q=80',
+		'plamuren.html': 'https://images.unsplash.com/photo-1531835551805-16d864c8d311?auto=format&fit=crop&w=1200&q=80',
+		'tegels-plaatsen.html': 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1200&q=80',
+		'vloeren-leggen.html': 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1200&q=80',
+		'ramen-deuren.html': 'https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1200&q=80',
+		'andere-werken.html': 'https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=1200&q=80'
+	};
+	var currentPage = window.location.pathname.split('/').pop() || 'index.html';
+	if (serviceImages[currentPage]) {
+		$('#main .image.main img').attr('src', serviceImages[currentPage]);
+	}
+
 	// Breakpoints.
 		breakpoints({
 			xlarge:   [ '1281px',  '1680px' ],
