@@ -276,8 +276,19 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script>
-				document.getElementById('cookie-ok').addEventListener('click', function () {
-					document.getElementById('cookie-notice').remove();
+				document.getElementById('cookie-ok').addEventListener('click', function (event) {
+				var button = event.currentTarget;
+				var bounds = button.getBoundingClientRect();
+				var message = document.createElement('span');
+				message.className = 'cookie-understood';
+				message.textContent = 'Begrijpen!';
+				message.style.left = (bounds.left + bounds.width / 2) + 'px';
+				message.style.top = bounds.top + 'px';
+				document.body.appendChild(message);
+				document.getElementById('cookie-notice').remove();
+				message.addEventListener('animationend', function () {
+					this.remove();
+				});
 				});
 			</script>
 
