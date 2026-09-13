@@ -26,6 +26,7 @@
 			'<li><a href="andere-werken.html">Andere werken</a></li>' +
 			'</ul></li>' +
 			'<li><a href="informatie.html">Informatie</a></li>' +
+			'<li><a href="nieuws.html">Nieuws</a></li>' +
 			'<li><a href="contact.html">Contact</a></li>' +
 			'<li><a href="jobs.html">Jobs</a></li>' +
 			'</ul>');

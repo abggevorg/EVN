@@ -2136,6 +2136,61 @@ button,
 .information-links li:first-child {
   border-top: 0; }
 
+.news-grid {
+  display: grid;
+  gap: 1.5em;
+  grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+.news-card {
+  background: var(--color-code-bg);
+  border: solid 1px var(--color-border);
+  padding: 1.75em; }
+
+.news-card h2 {
+  font-size: 1.15em;
+  margin: 0.5em 0 0.75em; }
+
+.news-label {
+  color: var(--color-primary);
+  font-size: 0.75em;
+  font-weight: 700;
+  letter-spacing: 0.075em;
+  text-transform: uppercase; }
+
+.news-meta {
+  color: var(--color-heading);
+  font-size: 0.78em;
+  margin-bottom: 1em; }
+
+.news-card a {
+  color: var(--color-primary);
+  font-weight: 600; }
+
+.news-disclaimer {
+  border-left: solid 4px var(--color-border);
+  margin-top: 2em;
+  padding-left: 1em; }
+
+.news-card[hidden] {
+  display: none; }
+
+.news-pagination {
+  align-items: center;
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+  margin: 2em 0; }
+
+.news-pagination .button:disabled {
+  cursor: not-allowed;
+  opacity: 0.45; }
+
+.news-page-number {
+  color: var(--color-heading);
+  font-size: 0.85em;
+  font-weight: 600;
+  white-space: nowrap; }
+
 @media screen and (max-width: 736px) {
   .jobs-grid {
     grid-template-columns: 1fr; }
@@ -2148,6 +2203,20 @@ button,
 
   .information-card {
     padding: 1.5em; }
+
+  .news-grid {
+    grid-template-columns: 1fr; }
+
+  .news-card {
+    padding: 1.5em; }
+
+  .news-pagination {
+    gap: 0.5em;
+    justify-content: space-between; }
+
+  .news-pagination .button {
+    font-size: 0.62em;
+    padding: 0 0.75em; }
 
   .job-application {
     align-items: stretch;
