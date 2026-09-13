@@ -9,27 +9,29 @@
 	var	$window = $(window),
 		$head = $('head'),
 		$body = $('body');
+	var pagePrefix = window.location.pathname.indexOf('/pages/') !== -1 ? '../' : '';
+	var contentPrefix = pagePrefix ? '' : 'pages/';
 
 	var $menu = $('#menu');
 	if ($menu.length) {
 		$menu.html('<header class="major"><h2>Menu</h2></header>' +
 			'<ul>' +
-			'<li><a href="index.html">Home</a></li>' +
-			'<li><a href="over-ons.html">Over ons</a></li>' +
+			'<li><a href="' + pagePrefix + 'index.html">Home</a></li>' +
+			'<li><a href="' + contentPrefix + 'over-ons.html">Over ons</a></li>' +
 			'<li><span class="opener">Onze diensten</span><ul>' +
-			'<li><a href="afbraakwerken.html">Afbraakwerken</a></li>' +
-			'<li><a href="schilderen.html">Schilderen</a></li>' +
-			'<li><a href="plamuren.html">Plamuren</a></li>' +
-			'<li><a href="tegels-plaatsen.html">Tegels plaatsen</a></li>' +
-			'<li><a href="vloeren-leggen.html">Vloeren leggen</a></li>' +
-			'<li><a href="ramen-deuren.html">Ramen en deuren vervangen</a></li>' +
-			'<li><a href="andere-werken.html">Andere werken</a></li>' +
+			'<li><a href="' + contentPrefix + 'afbraakwerken.html">Afbraakwerken</a></li>' +
+			'<li><a href="' + contentPrefix + 'schilderen.html">Schilderen</a></li>' +
+			'<li><a href="' + contentPrefix + 'plamuren.html">Plamuren</a></li>' +
+			'<li><a href="' + contentPrefix + 'tegels-plaatsen.html">Tegels plaatsen</a></li>' +
+			'<li><a href="' + contentPrefix + 'vloeren-leggen.html">Vloeren leggen</a></li>' +
+			'<li><a href="' + contentPrefix + 'ramen-deuren.html">Ramen en deuren vervangen</a></li>' +
+			'<li><a href="' + contentPrefix + 'andere-werken.html">Andere werken</a></li>' +
 			'</ul></li>' +
-			'<li><a href="informatie.html">Informatie</a></li>' +
-			'<li><a href="nieuws.html">Nieuws</a></li>' +
-			'<li><a href="fotos.html">Foto\'s</a></li>' +
-			'<li><a href="contact.html">Contact</a></li>' +
-			'<li><a href="jobs.html">Jobs</a></li>' +
+			'<li><a href="' + contentPrefix + 'informatie.html">Informatie</a></li>' +
+			'<li><a href="' + contentPrefix + 'nieuws.html">Nieuws</a></li>' +
+			'<li><a href="' + contentPrefix + 'fotos.html">Foto\'s</a></li>' +
+			'<li><a href="' + contentPrefix + 'contact.html">Contact</a></li>' +
+			'<li><a href="' + contentPrefix + 'jobs.html">Jobs</a></li>' +
 			'</ul>');
 		if (window.matchMedia('(min-width: 737px)').matches) {
 			$menu.children('ul').find('.opener').addClass('active');
