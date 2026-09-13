@@ -2511,7 +2511,7 @@ button,
   margin: 0.5em 0 0 0;
   padding: 0.5em 0 0 0; }
   #menu > ul > li > ul {
-    color: var(--color-placeholder);
+    color: var(--color-primary);
     display: none;
     margin: 0.5em 0 1.5em 0;
     padding-left: 1em; }
