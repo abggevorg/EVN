@@ -48,6 +48,44 @@
 		$('#main .image.main img').attr('src', serviceImages[currentPage]);
 	}
 
+	document.querySelectorAll('.job-application').forEach(function (application) {
+		var input = application.querySelector('.job-cv-input');
+		var label = application.querySelector('.job-file-label');
+		var sendButton = application.querySelector('.job-send');
+		var showSuccess = function () {
+			application.innerHTML = '<div class="job-success"><span class="icon solid fa-check-circle" aria-hidden="true"></span><strong>Je hebt gesolliciteerd</strong></div>';
+		};
+
+		input.addEventListener('change', function () {
+			var file = input.files[0];
+			if (!file) {
+				return;
+			}
+			var extension = file.name.split('.').pop().toLowerCase();
+			if (['pdf', 'doc', 'docx'].indexOf(extension) === -1) {
+				input.value = '';
+				label.textContent = 'Dien je cv in';
+				label.classList.remove('selected');
+				sendButton.classList.remove('ready');
+				sendButton.disabled = true;
+				return;
+			}
+			label.textContent = file.name;
+			label.classList.add('selected');
+			sendButton.classList.add('ready');
+			sendButton.disabled = false;
+		});
+
+		sendButton.addEventListener('click', function () {
+			var file = input.files[0];
+			if (!file) {
+				return;
+			}
+
+			showSuccess();
+		});
+	});
+
 	// Breakpoints.
 		breakpoints({
 			xlarge:   [ '1281px',  '1680px' ],

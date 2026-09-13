@@ -2039,12 +2039,82 @@ button,
   border-top: 0;
   padding-top: 0; }
 
+.job-application {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75em; }
+
+.job-cv-input {
+  height: 1px;
+  opacity: 0;
+  position: absolute;
+  width: 1px; }
+
+.job-file-label {
+  cursor: pointer;
+  margin: 0; }
+
+.job-file-label.selected {
+  background-color: var(--color-heading);
+  color: #ffffff !important;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-transform: none;
+  white-space: nowrap; }
+
+.job-send {
+  background: #25a55b;
+  border: 0;
+  border-radius: 0.375em;
+  color: #ffffff !important;
+  cursor: pointer;
+  font-family: "Roboto Slab", serif;
+  font-size: 0.8em;
+  font-weight: 700;
+  line-height: 3.5em;
+  min-height: 3.5em;
+  padding: 0 1.25em;
+  text-transform: uppercase;
+  display: none; }
+
+.job-send.ready {
+  display: inline-block; }
+
+.job-send:hover:not(:disabled) {
+  background: #1d874a; }
+
+.job-send:disabled {
+  cursor: not-allowed;
+  opacity: 0.45; }
+
+.job-success {
+  align-items: center;
+  color: #25a55b;
+  display: flex;
+  gap: 0.6em;
+  font-size: 0.95em;
+  font-weight: 700; }
+
+.job-success .icon {
+  font-size: 1.8em; }
+
 @media screen and (max-width: 736px) {
   .jobs-grid {
     grid-template-columns: 1fr; }
 
   .job-card {
     padding: 1.5em; }
+
+  .job-application {
+    align-items: stretch;
+    flex-direction: column; }
+
+  .job-file-label,
+  .job-send {
+    text-align: center;
+    width: 100%; }
 }
 
 @keyframes reviews-slide {
