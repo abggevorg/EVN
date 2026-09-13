@@ -61,3 +61,37 @@
 			}
 		}
 	}
+
+	ul.offer-actions {
+		.whatsapp-offerte {
+			@include vendor('align-items', 'center');
+			@include vendor('display', 'inline-flex');
+			@include vendor('justify-content', 'center');
+			background-color: #25D366;
+			border-radius: 0.375em;
+			color: #ffffff !important;
+			font-size: 1.35em;
+			height: 2.59em;
+			line-height: 1;
+			width: 2.59em;
+
+			&:hover {
+				background-color: #20b958;
+			}
+		}
+	}
+
+	@media screen and (max-width: 480px) {
+		ul.offer-actions {
+			@include vendor('flex-direction', 'column');
+
+			li {
+				padding-left: 0;
+				padding-top: 1em;
+
+				&:first-child {
+					padding-top: 0;
+				}
+			}
+		}
+	}

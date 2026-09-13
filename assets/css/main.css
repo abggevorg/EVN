@@ -1361,6 +1361,41 @@ ul.actions {
     ul.actions.fit.stacked {
       width: 100%; }
 
+ul.offer-actions .whatsapp-offerte {
+  -moz-align-items: center;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  -moz-display: inline-flex;
+  -webkit-display: inline-flex;
+  -ms-display: inline-flex;
+  display: inline-flex;
+  -moz-justify-content: center;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  background-color: #25D366;
+  border-radius: 0.375em;
+  color: #ffffff !important;
+  font-size: 1.35em;
+  height: 2em;
+  line-height: 1;
+  width: 2em; }
+  ul.offer-actions .whatsapp-offerte:hover {
+    background-color: #20b958; }
+
+@media screen and (max-width: 480px) {
+  ul.offer-actions {
+    -moz-flex-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    ul.offer-actions li {
+      padding-left: 0;
+      padding-top: 1em; }
+      ul.offer-actions li:first-child {
+        padding-top: 0; } }
+
 /* Icons */
 ul.icons {
   cursor: default;
