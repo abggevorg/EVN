@@ -49,6 +49,31 @@
 		$('#main .image.main img').attr('src', serviceImages[currentPage]);
 	}
 
+	var likeTarget = document.querySelector('.hero-like-target');
+	if (likeTarget) {
+		var addLike = function (event) {
+			var bounds = likeTarget.getBoundingClientRect();
+			var clickX = event && typeof event.clientX === 'number' ? event.clientX - bounds.left : bounds.width / 2;
+			var clickY = event && typeof event.clientY === 'number' ? event.clientY - bounds.top : bounds.height / 2;
+			var heart = document.createElement('span');
+			heart.className = 'floating-heart';
+			heart.textContent = '♥';
+			heart.style.left = clickX + 'px';
+			heart.style.top = clickY + 'px';
+			likeTarget.appendChild(heart);
+			heart.addEventListener('animationend', function () {
+				this.remove();
+			});
+		};
+		likeTarget.addEventListener('click', addLike);
+		likeTarget.addEventListener('keydown', function (event) {
+			if (event.key === 'Enter' || event.key === ' ') {
+				event.preventDefault();
+				addLike();
+			}
+		});
+	}
+
 	document.querySelectorAll('.job-application').forEach(function (application) {
 		var input = application.querySelector('.job-cv-input');
 		var label = application.querySelector('.job-file-label');
