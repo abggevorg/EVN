@@ -1589,9 +1589,36 @@ ul.contact-page-list li span {
 ul.contact-page-list li.brands:before {
   font-family: 'Font Awesome 5 Brands'; }
 
+#sidebar ul.contact li.fa-home {
+  display: none; }
+
 .contact-address .icon {
   color: var(--color-primary);
   margin-right: 0.5em; }
+
+.contact-hero {
+  align-items: stretch;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 3em; }
+
+.contact-hero-copy {
+  align-self: center;
+  padding: 2em 3em 2em 0; }
+
+.contact-hero-copy .main {
+  margin-bottom: 1em; }
+
+@media screen and (max-width: 736px) {
+  .contact-hero {
+    grid-template-columns: 1fr; }
+
+  .contact-hero-copy {
+    padding: 0 0 1.5em; }
+
+  .contact-hero-image {
+    min-height: 16em; }
+}
 
 /* Pagination */
 ul.pagination {
@@ -1977,6 +2004,49 @@ button,
   margin-top: 1em;
   text-align: center; }
 
+.jobs-grid {
+  display: grid;
+  gap: 1.5em;
+  grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+.job-card {
+  background: var(--color-code-bg);
+  border: solid 1px var(--color-border);
+  padding: 2em; }
+
+.job-card .job-icon {
+  color: var(--color-primary);
+  display: block;
+  font-size: 2em;
+  margin-bottom: 0.6em; }
+
+.job-card h2 {
+  margin-bottom: 0.75em; }
+
+.job-card h3 {
+  color: var(--color-heading);
+  font-size: 0.9em;
+  margin-bottom: 0.6em; }
+
+.job-card ul {
+  margin-bottom: 1.5em; }
+
+.job-card li {
+  border-top: 1px solid var(--color-border);
+  padding: 0.45em 0; }
+
+.job-card li:first-child {
+  border-top: 0;
+  padding-top: 0; }
+
+@media screen and (max-width: 736px) {
+  .jobs-grid {
+    grid-template-columns: 1fr; }
+
+  .job-card {
+    padding: 1.5em; }
+}
+
 @keyframes reviews-slide {
   0%, 15% { transform: translateX(0); }
   25%, 40% { transform: translateX(-100%); }
@@ -2198,6 +2268,7 @@ button,
   font-size: 0.9em;
   position: relative;
   width: 26em; }
+
   #sidebar h2 {
     font-size: 1.38889em; }
   #sidebar > .inner {

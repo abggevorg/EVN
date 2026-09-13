@@ -27,7 +27,7 @@
 			'</ul></li>' +
 			'<li><a href="#">Informatie</a></li>' +
 			'<li><a href="contact.html">Contact</a></li>' +
-			'<li><a href="#">Jobs</a></li>' +
+			'<li><a href="jobs.html">Jobs</a></li>' +
 			'</ul>');
 		if (window.matchMedia('(min-width: 737px)').matches) {
 			$menu.children('ul').find('.opener').addClass('active');
