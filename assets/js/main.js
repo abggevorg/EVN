@@ -29,7 +29,7 @@
 			'</ul></li>' +
 			'<li><a href="' + contentPrefix + 'informatie.html">Informatie</a></li>' +
 			'<li><a href="' + contentPrefix + 'nieuws.html">Nieuws</a></li>' +
-			'<li><a href="' + contentPrefix + 'fotos.html">Foto\'s</a></li>' +
+		
 			'<li><a href="' + contentPrefix + 'contact.html">Contact</a></li>' +
 			'<li><a href="' + contentPrefix + 'jobs.html">Jobs</a></li>' +
 			'</ul>');
